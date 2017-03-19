@@ -3,7 +3,7 @@
 
 // result markers
 atom-text-editor,
-atom-text-editor::shadow {
+atom-text-editor.editor {
   .find-result .region {
     background-color: transparent;
     border-radius: @component-border-radius;
@@ -27,7 +27,7 @@ atom-text-editor::shadow {
 
 atom-workspace.find-visible {
   atom-text-editor,
-  atom-text-editor::shadow {
+  atom-text-editor.editor {
     .find-result,
     .current-result {
       display: block;
@@ -260,7 +260,7 @@ atom-workspace.find-visible {
   }
 }
 
-.find-container atom-text-editor::shadow, .replace-container atom-text-editor::shadow {
+.find-container atom-text-editor.editor, .replace-container atom-text-editor.editor {
   // Styles for regular expression highlighting
   .regexp {
     .escape {
